@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 12px;
+    color: #222;
+}
+
+/* Header */
+
+header {
+    margin-top: 10px;
+}
+
+#course-title {
+    display: block;
+    background-color: #24577d;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+}
+
+nav a:hover {
+    background-color: #555;
+    text-decoration: underline;
+}
+
+/* Main */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: normal;
+    margin: 35px 0 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+.card {
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: #24577d;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 15px;
+    margin: 0;
+}
+
+/* About Me */
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 160px;
+    gap: 20px;
+    padding: 20px;
+}
+
+.about-text p {
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.profile {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #aaa;
+}
+
+h3 {
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 7px;
+    margin-top: 25px;
+}
+
+.location {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.location figure {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.location img {
+    width: 140px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.location figcaption {
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* Resources */
+
+.resources ul {
+    margin-top: 130px;
+    padding-left: 45px;
+}
+
+.resources li {
+    margin-bottom: 10px;
+}
+
+.resources a {
+    color: blue;
+}
+
+/* Footer */
+
+footer {
+    background-color: #24577d;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+#lastModified {
+    color: yellow;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .profile {
+        margin: 0 auto;
+    }
+
+    .location {
+        grid-template-columns: 1fr;
+    }
+
+    .resources ul {
+        margin-top: 20px;
+    }
+}
