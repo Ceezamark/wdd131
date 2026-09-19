@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nigeria | WDD 131 Place Page</title>
+  <meta name="description" content="A responsive place page about Nigeria with country data and current weather conditions, built for WDD 131.">
+  <meta name="author" content="Chineme Ndu-Okoronkwo">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:wght@400;600&display=swap">
+  <link rel="stylesheet" href="styles/place.css">
+
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+  <header class="page-title">
+    <h1>Nigeria</h1>
+  </header>
+
+  <main class="hero">
+    <picture class="hero__image">
+      <source srcset="images/lagos-large.webp" media="(min-width: 40rem)" width="1600" height="800">
+      <img src="images/lagos-small.webp" width="700" height="900"
+           alt="Sunset over the Atlantic coastline at Lagos, Nigeria, with palm trees along the shore">
+    </picture>
+
+    <section class="card card--data">
+      <h2>Data</h2>
+      <dl>
+        <div><dt>Area:</dt><dd>923,769 sq km</dd></div>
+        <div><dt>Population:</dt><dd>223,800,000</dd></div>
+        <div><dt>Capital:</dt><dd>Abuja</dd></div>
+        <div><dt>Languages:</dt><dd>English, Hausa, Yoruba, Igbo</dd></div>
+        <div><dt>Currency:</dt><dd>Nigerian Naira</dd></div>
+        <div><dt>Time Zone:</dt><dd>UTC+1</dd></div>
+        <div><dt>Calling Code:</dt><dd>+234</dd></div>
+        <div><dt>Internet TLD:</dt><dd>.ng</dd></div>
+      </dl>
+    </section>
+
+    <section class="card card--weather">
+      <h2>Weather</h2>
+      <img class="weather__icon" src="images/partly-cloudy.svg" alt="Partly cloudy" width="96" height="96">
+      <dl>
+        <div><dt>Temperature:</dt><dd>8 &deg;C</dd></div>
+        <div><dt>Conditions:</dt><dd>Partly Cloudy</dd></div>
+        <div><dt>Wind:</dt><dd>12 km/h</dd></div>
+        <div><dt>Wind Chill:</dt><dd id="windchill">N/A</dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>&copy;<span id="year"></span> &#127793; Chineme Ndu-Okoronkwo &#127793; Nigeria</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
