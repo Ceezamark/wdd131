@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 1.5rem 0;
+}
+
+/* Single centered column of images, regardless of screen size */
+img {
+  display: block;
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+  margin: 0 auto 2rem auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+  /* Fade-from-black animation */
+  animation: fadeFromBlack 1.2s ease-in;
+}
+
+@keyframes fadeFromBlack {
+  0% {
+    opacity: 0;
+    filter: brightness(0%);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(100%);
+  }
+}
+
+footer {
+  padding: 1.5rem;
+  background-color: #222;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}

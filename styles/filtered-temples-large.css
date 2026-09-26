@@ -1,0 +1,53 @@
+/* filtered-temples-large.css for larger-screen layout */
+
+@media (min-width: 768px) {
+    .header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        min-height: 82px;
+        padding: 0 1.5rem;
+    }
+
+    .site-title {
+        font-size: 1.9rem;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    nav,
+    nav.open {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        width: auto;
+        padding: 0;
+        margin-left: auto;
+    }
+
+    nav a {
+        padding: 1.8rem 1rem;
+        font-size: 1rem;
+    }
+
+    main {
+        width: min(90%, 1100px);
+        padding-top: 2.25rem;
+    }
+
+    h1 {
+        font-size: 2.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem 1rem;
+    }
+
+    .temple-card {
+        background: var(--soft-background);
+    }
+}

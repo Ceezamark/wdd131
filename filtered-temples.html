@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temple Album</title>
+
+    <meta name="description" content="Filtered Temple Album - a responsive, filterable collection of temple photographs.">
+    <meta name="author" content="Chineme Ndu-Okoronkwo">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a class="site-title" href="filtered-temples.html">Temple Album</a>
+
+            <button id="menu-button" class="menu-button" type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="primary-nav">
+                <span class="menu-icon">☰</span>
+            </button>
+
+            <nav id="primary-nav" aria-label="Primary navigation">
+                <a href="#" data-filter="home">Home</a>
+                <a href="#" data-filter="old">Old</a>
+                <a href="#" data-filter="new">New</a>
+                <a href="#" data-filter="large">Large</a>
+                <a href="#" data-filter="small">Small</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 id="page-heading">Home</h1>
+
+        <section class="temple-grid" id="temple-grid" aria-label="Temple photographs">
+            <!-- Temple cards are generated here by JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="current-year"></span> 🌺 Rubia Magdalena Francesco 🌺 Madagascar</p>
+        <p class="modified">Last Modification: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
