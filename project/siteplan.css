@@ -1,0 +1,133 @@
+:root {
+    --green: #1B4332;
+    --gold: #D4A017;
+    --cream: #FFF8E7;
+    --brown: #3D2B1F;
+    --white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+    color: var(--brown);
+    background-color: var(--cream);
+}
+
+header {
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.logo {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+section {
+    background-color: var(--white);
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    color: var(--green);
+    border-bottom: 3px solid var(--gold);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-family: "Poppins", sans-serif;
+    color: var(--green);
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+.color-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.color {
+    flex: 1 1 180px;
+    padding: 1rem;
+    border-radius: 6px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.gold {
+    background-color: var(--gold);
+    color: var(--brown);
+}
+
+.cream {
+    background-color: var(--cream);
+    color: var(--brown);
+    border: 1px solid #ddd;
+}
+
+.brown {
+    background-color: var(--brown);
+}
+
+.wireframes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.wireframe {
+    border: 2px solid var(--green);
+    padding: 1rem;
+    background-color: #f8f8f8;
+}
+
+.wire-box {
+    border: 2px dashed var(--brown);
+    padding: 1rem;
+    margin: 0.75rem 0;
+    text-align: center;
+    background-color: var(--white);
+}
+
+footer {
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 700px) {
+    .wireframes {
+        grid-template-columns: 1fr 1fr;
+    }
+}
