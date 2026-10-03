@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Product Review Form - Chineme Ndu-Okoronkwo</title>
+
+    <meta name="description"
+      content="WDD 131 - Product Review Form. Chineme Ndu-Okoronkwo. A Product Review Form for the WDD 131 course covering web development, HTML, CSS, and JavaScript.">
+    <meta name="author" content="Chineme Ndu-Okoronkwo">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="get">
+
+            <div class="field">
+                <label for="product">Product Name</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+
+            <fieldset class="field rating">
+                <legend>Overall Rating</legend>
+                <div class="stars">
+                    <div class="star">
+                        <label for="rating1"><span aria-hidden="true">&star;</span><span class="sr">1
+                                star</span></label>
+                        <input type="radio" id="rating1" name="rating" value="1" required>
+                    </div>
+                    <div class="star">
+                        <label for="rating2"><span aria-hidden="true">&star;&star;</span><span class="sr">2
+                                stars</span></label>
+                        <input type="radio" id="rating2" name="rating" value="2">
+                    </div>
+                    <div class="star">
+                        <label for="rating3"><span aria-hidden="true">&star;&star;&star;</span><span class="sr">3
+                                stars</span></label>
+                        <input type="radio" id="rating3" name="rating" value="3">
+                    </div>
+                    <div class="star">
+                        <label for="rating4"><span aria-hidden="true">&star;&star;&star;&star;</span><span class="sr">4
+                                stars</span></label>
+                        <input type="radio" id="rating4" name="rating" value="4">
+                    </div>
+                    <div class="star">
+                        <label for="rating5"><span aria-hidden="true">&star;&star;&star;&star;&star;</span><span
+                                class="sr">5 stars</span></label>
+                        <input type="radio" id="rating5" name="rating" value="5">
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="field">
+                <label for="installdate">Date of Installation</label>
+                <input type="date" id="installdate" name="installdate" required>
+            </div>
+
+            <fieldset class="field features">
+                <legend>Which features did you find useful in the product?
+                    <em>(Check all that apply)</em>
+                </legend>
+                <div class="check">
+                    <input type="checkbox" id="durability" name="features" value="durability">
+                    <label for="durability">Durability</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="ease" name="features" value="ease of use">
+                    <label for="ease">Ease of Use</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="performance" name="features" value="performance">
+                    <label for="performance">Performance</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="design" name="features" value="design">
+                    <label for="design">Design</label>
+                </div>
+            </fieldset>
+
+            <div class="field">
+                <label for="review">Written Review <span class="optional">(Optional)</span></label>
+                <textarea id="review" name="review" rows="5"></textarea>
+            </div>
+
+            <div class="field">
+                <label for="username">Your Name <span class="optional">(Optional)</span></label>
+                <input type="text" id="username" name="username" autocomplete="name">
+            </div>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year">2026</span> &#127802; Chineme Ndu-Okoronkwo &#127802;<br>
+            Owerri, Imo State/Nigeria<br>
+            Last Modification: <span id="modified"></span></p>
+    </footer>
+</body>
+
+</html>
