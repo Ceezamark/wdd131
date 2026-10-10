@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chineme Ndu-Okoronkwo">
+    <meta name="description"
+        content="Discover popular Nigerian dishes, common ingredients, and the regions where each food is loved.">
+    <title>Taste of Nigeria | Home</title>
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Poppins:wght@600;700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="index.html">Taste of Nigeria</a>
+            <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false"
+                aria-controls="site-nav">Menu</button>
+            <nav aria-label="Main">
+                <ul class="site-nav" id="site-nav">
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="dishes.html">Dishes</a></li>
+                    <li><a href="ingredients.html">Ingredients and Regions</a></li>
+                    <li><a href="contact.html">Share Your Favorite</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <img src="images/ng-table.jpg"
+                alt="A table filled with Nigerian dishes including jollof rice, suya, and fried plantain" width="1600"
+                height="900" fetchpriority="high">
+            <div class="hero-content">
+                <h1 id="hero-title">Taste of Nigeria</h1>
+                <p>Explore the rice, soups, grills, and snacks that bring Nigerian families together.</p>
+                <a class="button" href="dishes.html">Explore the dishes</a>
+            </div>
+        </section>
+
+        <p id="visit-message" class="status section" role="status"></p>
+
+        <section class="section prose" aria-labelledby="intro-title">
+            <h2 id="intro-title">Food at the heart of Nigerian life</h2>
+            <p>Nigeria is home to more than 250 ethnic groups, and each one brings its own flavors to the table. Meals
+                are shared at weddings, naming ceremonies, festivals, and Sunday family gatherings.</p>
+            <p>This site introduces five well-loved dishes, the ingredients that give them their taste, and the regions
+                where they are most popular.</p>
+        </section>
+
+        <section class="section" aria-labelledby="popular-title">
+            <h2 id="popular-title">Popular dishes</h2>
+
+            <div id="featured-dishes" class="card-grid">
+                <noscript>
+                    <p>Turn on JavaScript to see the dish cards, or visit the <a href="dishes.html">dishes page</a>.</p>
+                </noscript>
+            </div>
+
+            <p class="section"><a class="button" href="dishes.html">See all five dishes</a></p>
+        </section>
+
+        <section class="section" aria-labelledby="explore-title">
+            <h2 id="explore-title">Ingredients and regions</h2>
+
+            <div class="panel-grid">
+                <div class="panel">
+                    <h3>What goes in the pot</h3>
+                    <p>Palm oil, scotch bonnet peppers, black-eyed peas, yam, and melon seeds appear again and again in
+                        Nigerian kitchens.</p>
+                    <a href="ingredients.html#ingredients-title">Browse the ingredients</a>
+                </div>
+
+                <div class="panel">
+                    <h3>Where each dish comes from</h3>
+                    <p>Suya started in the north, while akara and pounded yam are loved across the southwest. Find the
+                        signature foods of four regions.</p>
+                    <a href="ingredients.html#regions-title">Explore the regions</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year">2026</span> Taste of Nigeria | Chineme Ndu-Okoronkwo</p>
+        <p id="last-modified"></p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+</body>
+
+</html>

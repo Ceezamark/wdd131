@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chineme Ndu-Okoronkwo">
+    <meta name="description" content="Tell us your favorite Nigerian dish and how spicy you like your food.">
+
+    <title>Share Your Favorite Dish | Taste of Nigeria</title>
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Poppins:wght@600;700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="index.html">Taste of Nigeria</a>
+            <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false"
+                aria-controls="site-nav">Menu</button>
+            <nav aria-label="Main">
+                <ul class="site-nav" id="site-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dishes.html">Dishes</a></li>
+                    <li><a href="ingredients.html">Ingredients and Regions</a></li>
+                    <li><a href="contact.html" aria-current="page">Share Your Favorite</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-banner prose" aria-labelledby="page-title">
+            <h1 id="page-title">Share your favorite dish</h1>
+            <p>Tell us which Nigerian dish you love most. Your answer is saved only in this browser and is not sent
+                anywhere.</p>
+        </section>
+
+        <form id="favorite-form" class="form" autocomplete="on">
+            <div class="field">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" required minlength="2" autocomplete="name">
+            </div>
+
+            <div class="field">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+
+            <div class="field">
+                <label for="favoriteDish">Favorite dish</label>
+                <select id="favoriteDish" name="favoriteDish" required>
+                    <option value="">Choose a dish</option>
+                </select>
+            </div>
+
+            <fieldset>
+                <legend>How spicy do you like your food?</legend>
+                <div class="choice">
+                    <input type="radio" id="spice-mild" name="spice" value="Mild" required>
+                    <label for="spice-mild">Mild</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="spice-medium" name="spice" value="Medium">
+                    <label for="spice-medium">Medium</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="spice-hot" name="spice" value="Hot">
+                    <label for="spice-hot">Hot</label>
+                </div>
+            </fieldset>
+
+            <div class="field">
+                <label for="comment">Why do you love it?</label>
+                <textarea id="comment" name="comment" rows="4" maxlength="300"
+                    aria-describedby="comment-hint comment-counter"></textarea>
+                <p class="hint" id="comment-hint">Optional: tell us why you love this dish.</p>
+                <p class="hint" id="comment-counter"></p>
+            </div>
+
+            <div class="choice">
+                <input type="checkbox" id="cooked" name="cooked">
+                <label for="cooked">I have cooked this dish at home</label>
+            </div>
+
+            <p><button type="submit" class="button">Save my favorite</button></p>
+        </form>
+
+        <p id="form-message" class="form-message" role="status"></p>
+        <p id="submission-history" class="status" role="status"></p>
+    </main>
+    
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year">2026</span> Taste of Nigeria | Chineme Ndu-Okoronkwo</p>
+        <p id="last-modified"></p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+</body>
+
+</html>

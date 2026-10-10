@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chineme Ndu-Okoronkwo">
+    <meta name="description" content="Read about jollof rice, pounded yam and egusi soup, suya, moi moi, and akara.">
+
+    <title>Popular Dishes | Taste of Nigeria</title>
+    
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Poppins:wght@600;700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="index.html">Taste of Nigeria</a>
+            <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false"
+                aria-controls="site-nav">Menu</button>
+            <nav aria-label="Main">
+                <ul class="site-nav" id="site-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dishes.html" aria-current="page">Dishes</a></li>
+                    <li><a href="ingredients.html">Ingredients and Regions</a></li>
+                    <li><a href="contact.html">Share Your Favorite</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-banner prose" aria-labelledby="page-title">
+            <h1 id="page-title">Popular Nigerian dishes</h1>
+            <p>Read about five favorites, check what goes into each one, and save the dishes you want to try. Your saved
+                dishes stay on this device.</p>
+        </section>
+
+        <div class="filters" role="group" aria-label="Filter dishes">
+            <div>
+                <label for="region-filter">Region</label>
+                <select id="region-filter">
+                    <option value="all">All regions</option>
+                    <option value="North">North</option>
+                    <option value="Southwest">Southwest</option>
+                    <option value="Southeast">Southeast</option>
+                    <option value="South-South">South-South</option>
+                </select>
+            </div>
+
+            <div class="choice">
+                <input type="checkbox" id="saved-only">
+                <label for="saved-only">Show saved dishes only</label>
+            </div>
+        </div>
+
+        <p id="dish-status" class="status" role="status"></p>
+        <div id="dish-list" class="card-grid">
+            <noscript>
+                <p>Please turn on JavaScript to see the dish cards.</p>
+            </noscript>
+        </div>
+    </main>
+    
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year">2026</span> Taste of Nigeria | Chineme Ndu-Okoronkwo</p>
+        <p id="last-modified"></p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+</body>
+
+</html>

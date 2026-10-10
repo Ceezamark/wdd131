@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chineme Ndu-Okoronkwo">
+    <meta name="description"
+        content="Learn about common Nigerian cooking ingredients and the signature foods of four regions.">
+    
+    <title>Ingredients and Regions | Taste of Nigeria</title>
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Poppins:wght@600;700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="index.html">Taste of Nigeria</a>
+            <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false"
+                aria-controls="site-nav">Menu</button>
+            <nav aria-label="Main">
+                <ul class="site-nav" id="site-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dishes.html">Dishes</a></li>
+                    <li><a href="ingredients.html" aria-current="page">Ingredients and Regions</a></li>
+                    <li><a href="contact.html">Share Your Favorite</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-banner prose" aria-labelledby="page-title">
+            <h1 id="page-title">Ingredients and regions</h1>
+            <p>A few key ingredients flavor most Nigerian cooking. Where a dish comes from often decides how it is
+                cooked and what it is served with.</p>
+        </section>
+
+        <section class="section" aria-labelledby="ingredients-title">
+            <h2 id="ingredients-title">Common ingredients</h2>
+
+            <div class="button-row" id="ingredient-filters" role="group" aria-label="Filter ingredients by type">
+                <button type="button" class="button button-toggle" data-category="All" aria-pressed="true">All</button>
+                <button type="button" class="button button-toggle" data-category="Staple"
+                    aria-pressed="false">Staples</button>
+                <button type="button" class="button button-toggle" data-category="Flavor"
+                    aria-pressed="false">Flavor</button>
+                <button type="button" class="button button-toggle" data-category="Protein"
+                    aria-pressed="false">Protein</button>
+                <button type="button" class="button button-toggle" data-category="Vegetable"
+                    aria-pressed="false">Vegetables</button>
+            </div>
+
+            <p id="ingredient-status" class="status" role="status"></p>
+            <div id="ingredient-list" class="card-grid">
+                <noscript>
+                    <p>Please turn on JavaScript to see the ingredient list.</p>
+                </noscript>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="regions-title">
+            <h2 id="regions-title">Foods by region</h2>
+
+            <p class="prose">Nigeria has hundreds of food traditions, so this is only a starting point. These four
+                regions each have signature dishes.</p>
+            
+            <div class="panel-grid">
+                <article class="panel">
+                    <h3>North</h3>
+                    <p>Home to Hausa and Fulani cooking, where grains such as millet, sorghum, and rice are common and
+                        grilling and drying meat is a long tradition.</p>
+                    <ul>
+                        <li>Suya, grilled meat with yaji spice</li>
+                        <li>Tuwo shinkafa, a soft rice pudding eaten with soup</li>
+                        <li>Kilishi, spiced dried meat</li>
+                        <li>Masa, fried rice cakes</li>
+                    </ul>
+                </article>
+
+                <article class="panel">
+                    <h3>Southwest</h3>
+                    <p>The Yoruba homeland, known for palm oil, peppers, and many bean dishes.</p>
+                    <ul>
+                        <li>Jollof rice, a party favorite</li>
+                        <li>Pounded yam and egusi soup</li>
+                        <li>Moi moi and akara, both made from black-eyed peas</li>
+                        <li>Amala with ewedu and gbegiri soups</li>
+                    </ul>
+                </article>
+
+                <article class="panel">
+                    <h3>Southeast</h3>
+                    <p>The Igbo homeland, where yam is celebrated each year at the new yam festival.</p>
+                    <ul>
+                        <li>Ofe onugbu, bitterleaf soup</li>
+                        <li>Oha soup, thickened with cocoyam</li>
+                        <li>Abacha, a cassava salad</li>
+                        <li>Nkwobi, spiced cow foot</li>
+                    </ul>
+                </article>
+
+                <article class="panel">
+                    <h3>South-South</h3>
+                    <p>The Niger Delta region, where rivers and coastline make fish and seafood common.</p>
+                    <ul>
+                        <li>Banga soup, made from palm fruit</li>
+                        <li>Edikang ikong, a leafy vegetable soup</li>
+                        <li>Afang soup, made with afang leaves</li>
+                        <li>Pepper soup, a spicy broth</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year">2026</span> Taste of Nigeria | Chineme Ndu-Okoronkwo</p>
+        <p id="last-modified"></p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+</body>
+</html>
